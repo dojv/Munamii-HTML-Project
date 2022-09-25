@@ -1,0 +1,253 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background: rgb(249,242,240);
+} 
+
+
+
+
+
+/* text */
+h1, h3, p, a {
+    color: #89023E;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* paddings and margins */
+.extra-padding {
+    padding: 5% 0;
+}
+.padding {
+    padding: 2.5% 0;
+}
+
+
+/* navbar */
+nav {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu > li {
+    margin-right: 3vw;
+} 
+.menu > li > a {
+    color: white;
+    padding: 0.1em 0.2em;
+    background: #89023E;
+    transition: 0.5s;
+}
+.menu > li > a:hover {
+    background: #F3E1DD;
+    color: #89023E;
+}
+
+/* imgs and logo */
+.background-image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.background-image > img {
+    width: 100%;
+    height: 100%;
+}
+.logo-container {
+    width: 30%;
+    position: absolute;
+    bottom: -22.5%;
+    right: 35%;
+}
+.logo-container > a > img {
+    height: 100%;
+    width: 100%;
+}
+
+/* footer */
+li {
+    list-style-type: none;
+}
+footer {
+    background: rgb(250,220,210);
+}
+.SM-container, .policy-container, .copyright-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+} 
+.policy-container > li, .copyright-container > li {
+    margin: 0 5px 5px 5px;
+}
+.copyright-container {
+    padding-bottom: 1em;
+}
+.SM-container {
+    padding: 1em 0;
+}
+.SM-container > li {
+    justify-content: center;
+}
+.individual-SM-container {
+    margin: 0 1em;
+    height: 40px;
+    display: flex;
+}
+.individual-SM-container > img {
+    max-width: 25px;
+    max-height: 25px;
+    display: block;
+    margin: auto 5px auto 0;
+}
+.individual-SM-container > a {
+    margin: auto 0;
+}
+
+@media only screen and (min-width: 960px) {
+    /* .background-image {
+        max-width: 1000px;
+        margin: 0 auto;
+    } */
+    p {
+        font-size: 1em;
+    }
+    .menu > li > a {
+        font-size: 1.5em;
+    }
+    .logo-container {
+        bottom: 55%;
+        right: 5%;
+        width: 25%
+    }
+
+
+    .textbox-container {
+        position: absolute;
+        top: 50%;
+        left: 0;
+    }
+    .text-box {
+        background: #F3E1DD;
+        border-radius: 50px;
+        max-width: 60%;
+        margin: 0 auto;
+    }
+    .text-box > p {
+        padding: 1em;
+    }
+    .padding, .extra-padding {
+        display:none;
+    }
+    .text-for-smallest-screen {display:none;}
+}
+
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+    footer > ul > li > a {
+        font-size: 0.75em;
+    }
+    p {
+        font-size: 0.75em;
+    }
+    .menu > li > a {
+        font-size: 1.25em;
+    }
+    .logo-container {
+        bottom: 55%;
+        right: 5%;
+        width: 25%
+    }
+
+    .textbox-container {
+        position: absolute;
+        top: 50%;
+        left: 0;
+    }
+    .text-box {
+        background: #F3E1DD;
+        border-radius: 50px;
+
+    }
+    .text-box > p {
+        padding: 1em;
+    }
+
+    .padding, .extra-padding {
+        display:none;
+    }
+    .text-for-smallest-screen {display:none;}
+}
+
+@media only screen and (min-width: 281px) and (max-width: 480px) {
+    footer > ul > li > a {
+        font-size: 0.55em;
+    }
+    .SM-container {
+        display: block;
+    }
+
+    p {
+        font-size: 0.55em;
+    }
+    .menu > li > a {
+        font-size: 1em;
+    }
+
+    .textbox-container {
+        position: absolute;
+        top: 40%;
+        left: 0;
+    }
+    .text-box {
+        background: #F3E1DD;
+        border-radius: 30px;
+
+    }
+    .text-box > p {
+        padding: 0.5em;
+    }
+    .text-for-smallest-screen {display: none}
+}
+
+@media only screen and (max-width: 280px) {
+    .menu {
+        display: block;
+    }
+    .SM-container {
+        display: block;
+    }
+
+    footer > ul > li > a {
+        font-size: 0.75em;
+    }
+
+    p {
+        font-size: 0.75em;
+    }
+    .menu > li > a {
+        font-size: 0.85em;
+    }
+
+    .logo-container {
+        width: 30%;
+        position: absolute;
+        bottom: -50px;
+        right: 35%;
+    }
+
+    .textbox-container, .text-box, .text-box > p {display:none;}
+    .text-for-smallest-screen {
+        background: white;
+        padding: 2em 0.5em 3em 0.5em;
+    }
+
+}

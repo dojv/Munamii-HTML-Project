@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="assets/css/products.css">
+    </head>
+    <body onload="LoadProducts()">
+        <section>
+            <div class="background-image"><img src="assets/img/products.jpg" alt="picture of ____">
+                <nav>
+                    <ul class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a onclick="ResetOption()" href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="logo-container"><a href="index.html"><img src="assets/img/logo.png" alt="logo"></a></div>
+            </div>
+        </section>
+
+        <div class="padding"></div>
+        <h1>What's your favourite?</h1>
+        <div class="padding"></div>
+    
+        <div class="button-icon-container">
+            <div class="cake-container" onclick="LoadCakes()">
+                <div class="cake-icon-container"><img src="assets/img/cake.png" alt="cake icon"></div>
+                <div class="button button-1" id="cake"><p>Cakes</p></div>
+            </div>
+            <div class="cupcake-container" onclick="LoadCupCakes()">
+                <div class="cupcake-icon-container"><img src="assets/img/cupcake.png" alt="cupcake icon"></div>
+                <div class="button button-2" id="cupcake"><p>Cupcakes</p></div>
+            </div>
+            <div class="custom-container" onclick="LoadCustom()">
+                <div class="custom-icon-container"><img src="assets/img/custom.png" alt="custom icon"></div>
+                <div class="button button-3" id="custom"><p>Custom</p></div>
+            </div>
+        </div>
+        
+        <div class="padding"></div>
+
+        <!-- js will fill this div with data -->
+        <div id="products">
+            <!-- <div class="products-container">
+                <div class="obj-container">
+                    <div class="img-container"><img src="assets/img/cupcakes/cupcake1.jpg" alt="cupcake1"></div>
+                    <p>Cupcake 1</p>
+                    <p>Price</p>
+                </div>
+                <div class="obj-container">
+                    <div class="img-container"><img src="assets/img/cupcakes/cupcake2.jpg" alt="cupcake2"></div>
+                    <p>Cupcake 2</p>
+                    <p>Price</p>
+                </div>
+                <div class="obj-container">
+                    <div class="img-container"><img src="assets/img/cupcakes/cupcake3.jpg" alt="cupcake3"></div>
+                    <p>Cupcake 3</p>
+                    <p>Price</p>
+                </div>
+                <div class="obj-container">
+                    <div class="img-container"><img src="assets/img/cupcakes/cupcake4.jpg" alt="cupcake4"></div>
+                    <p>Cupcake 4</p>
+                    <p>Price</p>
+                </div>
+                <div class="obj-container">
+                    <div class="img-container"><img src="assets/img/cupcakes/cupcake5.jpg" alt="cupcake5"></div>
+                    <p>Cupcake 5</p>
+                    <p>Price</p>
+                </div>
+                <div class="obj-container">
+                    <div class="img-container"><img src="assets/img/cupcakes/cupcake6.jpg" alt="cupcake6"></div>
+                    <p>Cupcake 6</p>
+                    <p>Price</p>
+                </div>
+                <div class="obj-container">
+                    <div class="img-container"><img src="assets/img/cupcakes/cupcake7.jpg" alt="cupcake7"></div>
+                    <p>Cupcake 7</p>
+                    <p>Price</p>
+                </div>
+                <div class="obj-container">
+                    <div class="img-container"><img src="assets/img/cupcakes/cupcake8.jpg" alt="cupcake8"></div>
+                    <p>Cupcake 8</p>
+                    <p>Price</p>
+                </div>
+            </div> -->
+        </div>
+
+        <div class="padding"></div>
+
+        <section>
+            <footer>
+                <ul class="SM-container">
+                    <li class="individual-SM-container"><img src="assets/img/facebook_logo.png" alt="facebook logo"><a href="https://www.facebook.com/munamiicupcakes" target="_blank">munamiicupcakes</a></li>
+                    <li class="individual-SM-container"><img src="assets/img/instagram_logo.png" alt="instagram logo"><a href="https://www.instagram.com/munamii.cakery/" target="_blank">@munamii.cakery</a></li>
+                    <li class="individual-SM-container"><img src="assets/img/whatsapp_logo.png" alt="whatsapp logo"><a href="#" target="_blank">WhatsApp</a></li>
+                </ul>
+                <ul class="policy-container">
+                    <li><a href="#">Delivery times</a></li>
+                    <li><a href="#">Payment information</a></li>
+                    <li><a href="#">Return policy</a></li>
+                </ul>
+                <ul class="copyright-container">
+                    <li><a href="#">© Munamii Cakery</a></li>
+                    <li><a href="#">Report abuse</a></li>
+                </ul>
+            </footer>
+        </section>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
